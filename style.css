@@ -1,0 +1,77 @@
+
+*{
+  margin : 0; /*여백 : 없음*/
+}
+/*선택자(=Selector)
+  0)  전체 선택자   ( =공용 선택자):
+  1)  태그 선택자   : h1 , p , body, . . . . .
+  2)  클래스 선택자 : .이름 (.top-icon)   문서 안에서 여러번 사용
+  3)  아이디 선택자 : #이름    문서 안에서 1회만 사용
+  4)  그룹 선택자   : 선택자1,선택자2, ...(comma)
+  */
+
+
+  html{
+    scroll-behavior: smooth; /*스크롤 : 부드럽게 이동 */
+}
+
+  body{
+    margin:0;   /*(바깥)여백  0 = (없음)*/
+    text-align:center; /*텍스트-정렬 : (가로) 가운데*/
+    background-color:white
+  }
+
+h2,h3,h4,h5,h6,p{ /*h1부터 p까지를 스타일 적용하겠다*/
+  margin:2rem 0;
+  /* 1rem = 16px */
+}
+#moto{
+  width: 639px;
+  height: 100px;
+  line-height: 70px;
+  background-image: url("ribbon.png");
+  margin:0 auto; /*(바깥)여백 : 상하0, 좌우 알아서(계산)*/
+}
+
+/*
+#moto{                                              <p id = "moto"> ... </p> 부분에 적용할 스타일
+
+    color: white;                                   (글자) 색상 : 흰색
+    font-size: 20px;
+    background-color: rgb(225, 202, 230);
+    padding: 1rem 0;                                (안)여백 : 기본값의 2배(상하), 좌우: 0
+}
+#moto::first-letter{
+  background-color: rgb(173, 175, 166);
+  font-size: 2.50rem;
+  padding: .25rem;
+  margin: .25rem;
+}
+*/
+.top-icon{/*클래스 선택자*/
+    width : 50px;  /*가로넓이 : 50픽셀로 , 세로높이는 이미지 비례 자동조정*/
+}
+.cover{
+  background-image: url("https://picsum.photos/seed/picsum/1920/300");
+  background-position: center; /* 사진의 위치를 cover의 중앙에 배치*/
+  background-size: cover; /*사진이 너무 크거나 작아도 공간에 맞춤*/
+  height: 300px;
+  line-height: 300px;
+  color: white;
+
+}
+.d-none{
+  display: none;   /*표시 : 안함*/
+}
+
+.profile{
+  width:250px;
+  margin : 0.8rem 0 ; /*(바깥)여백 : 상하 기본값2배수,좌우 0 */
+}
+
+
+/* shift + alt + up/down = 복제       ctrl+enter = 바로 아래 칸 생성
+
+
+
+
