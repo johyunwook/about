@@ -1,1 +1,1 @@
-alert(screen.availWidth)
+//alert(screen.availWidth)
