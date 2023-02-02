@@ -70,7 +70,21 @@ h2,h3,h4,h5,h6,p{ /*h1부터 p까지를 스타일 적용하겠다*/
 }
 
 
-/* shift + alt + up/down = 복제       ctrl+enter = 바로 아래 칸 생성
+
+
+/* p350 미디어 쿼리 작성위치(보통 여기에 작성)*/
+@media screen and (max-width : 412px){/* 미디어의 가로 크기가 480일때*/
+  #moto {
+    width: 390px;
+    height: 100px;
+    line-height: 47px;
+    background-image: url("ribbon.png");
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
 
 
 
